@@ -1,5 +1,6 @@
+using ProductList.Domain;
 using Microsoft.EntityFrameworkCore;
-using ProductsList;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,18 +28,18 @@ app.UseHttpsRedirection();
 
 app.MapGet("/Get/{id:Guid}", (Guid id, ApplicationDbContext db) => db.Products.Find(id));
 
-app.MapPost("/Post", (ProductDTO newProduct, ApplicationDbContext db) =>
+app.MapPost("/Post", (Product newProduct, ApplicationDbContext db) =>
 {
     db.Add(newProduct);
     db.SaveChanges();
 });
 
-app.MapGet("/Get/AllProducts", ( ApplicationDbContext db) => db.Products);
+app.MapGet("/Get/AllProducts", (ApplicationDbContext db) => db.Products);
 
 
-app.MapPut("/Put/Product", (ProductDTO product, ApplicationDbContext db) =>
+app.MapPut("/Put/Product", (Product product, ApplicationDbContext db) =>
 {
-    var DbProduct = db.Find<ProductDTO>(product.Id);
+    var DbProduct = db.Find<Product>(product.Id);
 
     DbProduct.Price = product.Price;
     DbProduct.ImagePath = product.ImagePath;

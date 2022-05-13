@@ -1,15 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace ProductsList.Migrations
+namespace ProductList.Domain.Migrations
 {
-    public partial class initial : Migration
+    /// <inheritdoc />
+    public partial class init : Migration
     {
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "products",
+                name: "Products",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -19,14 +22,15 @@ namespace ProductsList.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_products", x => x.Id);
+                    table.PrimaryKey("PK_Products", x => x.Id);
                 });
         }
 
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "products");
+                name: "Products");
         }
     }
 }
