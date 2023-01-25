@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductList.MinimalApi", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductList.gRPC", "ProductList.gRPC\ProductList.gRPC.csproj", "{AE973E4E-0422-4FB4-A438-AFD4A912B5F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductList.RESTfulAPI", "ProductList.RESTfulAPI\ProductList.RESTfulAPI.csproj", "{199EFE7F-8C76-4031-BA2E-450EBEA5088F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductList.RESTfulAPI", "ProductList.RESTfulAPI\ProductList.RESTfulAPI.csproj", "{199EFE7F-8C76-4031-BA2E-450EBEA5088F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductList.GraphQL", "ProductList.GraphQL\ProductList.GraphQL.csproj", "{2CEC8510-7325-4770-8499-505764AB3493}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{199EFE7F-8C76-4031-BA2E-450EBEA5088F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{199EFE7F-8C76-4031-BA2E-450EBEA5088F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{199EFE7F-8C76-4031-BA2E-450EBEA5088F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CEC8510-7325-4770-8499-505764AB3493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CEC8510-7325-4770-8499-505764AB3493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CEC8510-7325-4770-8499-505764AB3493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CEC8510-7325-4770-8499-505764AB3493}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

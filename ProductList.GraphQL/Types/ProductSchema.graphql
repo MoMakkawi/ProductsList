@@ -1,0 +1,25 @@
+type Product {
+    id: ID!
+    name: String
+    price: Int!
+    imagePath: String
+}
+
+type Query {
+    getAllProductsAsync: [Product] 
+    getProductByIdAsync(id: ID!): Product
+    getProductByNameAsync(name: String): Product
+}
+
+input ProductInput {
+    name: String
+    price: Int!
+    imagePath: String
+}
+
+type Mutation {
+    createProductAsync(input: ProductInput!): ID
+    updateProductAsync(id: ID!, input: ProductInput!): Product
+    deleteProductAsync(id: ID!): Boolean
+    deleteAllProductsAsync: Boolean
+}
