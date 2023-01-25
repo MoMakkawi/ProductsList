@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductList.Domain", "ProductList.Domain\ProductList.Domain.csproj", "{FAF62BD7-1E7D-4F57-8BF1-D258D807B397}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductList.Domain", "ProductList.Domain\ProductList.Domain.csproj", "{FAF62BD7-1E7D-4F57-8BF1-D258D807B397}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductList.MinimalApi", "ProductList.MinimalApi\ProductList.MinimalApi.csproj", "{7B6F7298-FE08-4EC2-AE85-3DD8AC280270}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductList.MinimalApi", "ProductList.MinimalApi\ProductList.MinimalApi.csproj", "{7B6F7298-FE08-4EC2-AE85-3DD8AC280270}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductList.gRPC", "ProductList.gRPC\ProductList.gRPC.csproj", "{AE973E4E-0422-4FB4-A438-AFD4A912B5F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7B6F7298-FE08-4EC2-AE85-3DD8AC280270}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B6F7298-FE08-4EC2-AE85-3DD8AC280270}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B6F7298-FE08-4EC2-AE85-3DD8AC280270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE973E4E-0422-4FB4-A438-AFD4A912B5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE973E4E-0422-4FB4-A438-AFD4A912B5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE973E4E-0422-4FB4-A438-AFD4A912B5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE973E4E-0422-4FB4-A438-AFD4A912B5F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option csharp_namespace = "ProductList.gRPC";
+
+import "google/protobuf/empty.proto";
+
+package product;
+
+service ProductServices{
+
+    rpc GetProduct (ProductRequest) returns (Product);
+    rpc GetAllProducts (google.protobuf.Empty) returns (stream Product);
+    rpc AddProduct (Product) returns (ProductResponse);
+    rpc UpdateProduct (Product) returns (ProductResponse);
+    rpc DeleteProduct (ProductRequest) returns (ProductResponse);
+    rpc DeleteAllProducts (google.protobuf.Empty) returns (ProductResponse);
+}
+
+
+message Product {
+    string id = 1;
+    string name = 2;
+    int32 price = 3;
+    string image_path = 4;
+}
+
+message ProductRequest {
+    string id = 1;
+}
+
+message ProductResponse{
+    string message = 1;
+}
